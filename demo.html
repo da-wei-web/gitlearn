@@ -13,8 +13,8 @@
 			}
 			.container{
 				width: 694px;
-				
 			}
+			/*表头*/
 			.head{
 				width: 694px;
 				height: 52px;
@@ -23,7 +23,18 @@
 				background-color: #4576b4;
 			}
 			.subtitle{
-				background-color: #00ff66;
+				height: 37px;
+				background-color: #c9d2e4;
+			}
+			/*创建空行*/
+			.empty{
+				height: 33px;
+				background-color: #e6eaf2;
+				border-collapse: collapse;
+			}
+			/*使每行的章节文本居中*/
+			.chapter{
+				text-align: center;
 			}
 		</style>
 	</head>
@@ -38,46 +49,44 @@
 			</thead>
 			<tbody>
 				<tr class="subtitle">
-					<td>第一章</td>
+					<td class="chapter">第一章</td>
 					<td>基础班开班典礼</td>
 				</tr>
-				<tr colspan="2">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
-				</tr>
-				<tr class="subtitle">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
-				</tr>
-				<tr colspan="2">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
+				<tr class="empty">
+					<td colspan="2">
+						（互联网概述 | 什么是网站 | 什么是网页 | 构成网页的元素 | 网站制作流程详解 | 怎样才能学好拿高薪 | WEB前端开发的前途 | WEB前端开发课程）
+					</td>
 				</tr>
 				<tr class="subtitle">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
+					<td class="chapter">第二章</td>
+					<td>HTML常用标签+背景</td>
 				</tr>
-				<tr colspan="2">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
-				</tr>
-				<tr class="subtitle">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
-				</tr>
-				<tr colspan="2">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
+				<tr class="empty">
+					<td colspan="2"></td>
 				</tr>
 				<tr class="subtitle">
-					<td>第一章</td>
-					<td>基础班开班典礼</td>
+					<td class="chapter">第三章</td>
+					<td>元素选择符+背景</td>
 				</tr>
-				<tr colspan="2">
-					<td></td>
-					<td></td>
+				<tr class="empty">
+					<td colspan="2"></td>
+				</tr>
+				<tr class="subtitle">
+					<td rowspan="3" class="chapter">第四章</td>
+					<td>CSS样式（Font+Text）+特殊符号</td>
+				</tr>
+				<tr class="subtitle">
+					<td>特殊符号</td>
+				</tr>
+				<tr class="subtitle">
+					<td>（Font+Text）</td>
 				</tr>
 			</tbody>
+			<tfoot>
+				<tr class="empty">
+					<td colspan="2"></td>
+				</tr>
+			</tfoot>
 		</table>
 	</body>
 </html>
