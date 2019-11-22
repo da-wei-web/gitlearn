@@ -6,7 +6,58 @@
 		<meta name="discription" content="内容的描述信息,作为摘要显示"><!--网页的简介-->
 		<meta name="author" content="27期-大卫"><!--作者信息-->
 		<title>第十二课-表格</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.container{
+				width: 1440px;
+				height: 900px;
+				background-color: red;
+				background-image: url("images/15743474181955600.jpg");
+			}
+			.landwin{
+				float: right;
+				width: 620px;
+				height: 820px;
+				margin: 40px 150px;
+				background-color: orange;
+			}
+			.content{
+				width: 500px;
+				margin: 20px 60px 0;
+			}
+		</style>
 	</head>
 	<body>
+		<div class="container">
+			<div class="landwin">
+				<table class="content">
+					<tr class="username">
+						<td><img src="" width="" height="" alt="1"></td>
+						<td colspan="3"><input type="text" name="username" placeholder="用户名/邮箱/手机号"></td>
+					</tr>
+					<tr class="psd">
+						<td><img src="" width="" height="" alt="2"></td>
+						<td colspan="3"><input type="passward" name="passward" placeholder="密码"></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="radio" name="choose">记住密码</td>
+						<td>欢迎注册</td>
+						<td>忘记密码</td>
+					</tr>
+					<tr class="landbutton">
+						<td colspan="4">登陆</td>
+					</tr>
+					<tr class="link">
+						<td>合作网站账号登录：</td>
+						<td><img src="" width="" height="" alt="3"></td>
+						<td><img src="" width="" height="" alt="4"></td>
+						<td><img src="" width="" height="" alt="5"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</body>
 </html>
