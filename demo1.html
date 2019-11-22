@@ -23,56 +23,80 @@
 				height: 820px;
 				margin: 40px 150px;
 				font-size: 16px;
-				background-color: #ffffff;
+				background-color: #f7eae9;
 			}
-			.content{
+			.cell{
 				width: 500px;
-				height:800px;
 				margin: 20px 60px 0;
-				overflow: hidden;
+				border-collapse: collapse;
 			}
 			.username{
 				width: 500px;
 				height: 40px;
-				border: 10px solid #0000ff;
 			}
 			.box{
 				width: 460px;
 				height: 40px;
+				border: 3px solid #59ffff;
 				text-align: left;
 			}
 			.box input{
 				width: 460px;
 				height: 40px;
+				background-color: #f7eae9; 
 			}
 			.psd{
 				height: 40px;
-				margin: 16px 0 0 0;
+			}
+			/*清除密码单元格的边框*/
+			.psd>.box{
+				border: 0;
 			}
 			.image{
 				width: 40px;
+				border: 3px solid #59ffff;
+			}
+			/*清除div.psd中图片单元格的边框*/
+			.psd>.image{
+				border: 0;
+			}
+			/*设置行与行之间的间距*/
+			.empty{
+				height: 30px;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
 			<div class="landwin">
-				<table class="content">
+				<table class="cell">
 					<tr class="username">
 						<td class="image"><img src="images/1.jpg" width="" height="" alt="1"></td>
 						<td colspan="3" class="box"><input type="text" name="username" placeholder="用户名/邮箱/手机号"></td>
 					</tr>
+					<tr class="empty">
+						<td colspan="4"></td>
+					</tr>
 					<tr class="psd">
 						<td class="image"><img src="images/2.jpg" width="" height="" alt="2"></td>
 						<td colspan="3" class="box"><input type="passward" name="passward" placeholder="密码"></td>
+					</tr>
+					<tr class="empty">
+						<td colspan="4"></td>
 					</tr>
 					<tr>
 						<td colspan="2"><input type="radio" name="choose">记住密码</td>
 						<td>欢迎注册</td>
 						<td>忘记密码</td>
 					</tr>
+					<tr class="empty">
+						<td colspan="4"></td>
+					</tr>
 					<tr class="landbutton">
 						<td colspan="4">登陆</td>
+					</tr>
+					<tr class="empty">
+						<td colspan="4"></td>
 					</tr>
 					<tr class="link">
 						<td>合作网站账号登录：</td>
